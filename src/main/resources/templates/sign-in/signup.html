@@ -126,20 +126,76 @@
                 <!-- Sign Up Form -->
                 <!-- jQuery Validation functionality is initialized with .js-validation-signup class in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signup px-30" action="be_pages_auth_all.html" method="post">
+                <form class="js-validation-signup px-30" th:action="@{/signup}" modelAttribute="signup" th:object="(${signup})" method="post">
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control" id="signup-username" name="signup-username">
-                        <label for="signup-username">Username</label>
+                        <input type="text" class="form-control" name="signup-name">
+                        <label for="signup-username">Name</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="email" class="form-control" id="signup-email" name="signup-email">
+                        <input type="email" class="form-control"  name="signup-email">
                         <label for="signup-email">Email</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control"  name="signup-phone">
+                        <label for="signup-password-confirm">Phone Number</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="date" class="form-control" name="signup-dob">
+                        <label for="signup-password-confirm">Date of Birth</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control"  name="signup-gender">
+                        <label for="signup-password-confirm">Gender</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control"  name="signup-class">
+                        <label for="signup-password-confirm">Class</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control"  name="signup-address">
+                        <label for="signup-password-confirm">Address</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control" name="signup-form">
+                        <label for="signup-password-confirm">Form</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control" name="signup-username">
+                        <label for="signup-password-confirm">Username</label>
                       </div>
                     </div>
                   </div>
@@ -158,7 +214,7 @@
                         <label for="signup-password-confirm">Password Confirmation</label>
                       </div>
                     </div>
-                  </div>
+                  </div>         
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="custom-control custom-checkbox">
@@ -168,9 +224,9 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <a type="button" class="btn btn-sm btn-hero btn-alt-success" th:href="@{/signIn}">
-                      <i class="fa fa-plus mr-10"></i> Daftar Akaun
-                    </a>
+                    <button type="submit" class="btn btn-sm btn-hero btn-alt-success" >
+                      <i class="si si-login mr-10"></i> Daftar Akaun
+                    </button>
                     <div class="mt-30">
                       <!-- <a class="link-effect text-muted mr-10 mb-5 d-inline-block" th:href="#" data-toggle="modal" data-target="#modal-terms">
                         <i class="fa fa-book text-muted mr-5"></i> Read Terms
