@@ -131,7 +131,7 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="text" class="form-control" name="signup-name">
-                        <label for="signup-username">Name</label>
+                        <label for="signup-username">Nama</label>
                       </div>
                     </div>
                   </div>
@@ -147,7 +147,7 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="text" class="form-control"  name="signup-phone">
-                        <label for="signup-password-confirm">Phone Number</label>
+                        <label for="signup-password-confirm">Nombor Telefon</label>
                       </div>
                     </div>
                   </div>
@@ -155,15 +155,24 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="date" class="form-control" name="signup-dob">
-                        <label for="signup-password-confirm">Date of Birth</label>
+                        <label for="signup-password-confirm">Tarikh Lahir</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control"  name="signup-gender">
-                        <label for="signup-password-confirm">Gender</label>
+                        <div class="col-12">
+                          <div class="custom-control custom-radio custom-control-inline mb-5">
+                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio1" value="option1" checked>
+                            <label class="custom-control-label" for="example-inline-radio1">Lelaki</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline mb-5">
+                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio2" value="option2">
+                            <label class="custom-control-label" for="example-inline-radio2">Perempuan</label>
+                          </div>
+                        </div>
+                        <label for="signup-password-confirm">Jantina</label>
                       </div>
                     </div>
                   </div>
@@ -171,15 +180,15 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="text" class="form-control"  name="signup-class">
-                        <label for="signup-password-confirm">Class</label>
+                        <label for="signup-password-confirm">Kelas</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control"  name="signup-address">
-                        <label for="signup-password-confirm">Address</label>
+                        <textarea class="form-control" id="example-textarea-input" name="signup-address" rows="6"></textarea>
+                        <label for="signup-password-confirm">Alamat Tempat Tinggal</label>
                       </div>
                     </div>
                   </div>
@@ -187,7 +196,7 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="text" class="form-control" name="signup-form">
-                        <label for="signup-password-confirm">Form</label>
+                        <label for="signup-password-confirm">Tingkatan</label>
                       </div>
                     </div>
                   </div>
@@ -196,6 +205,8 @@
                       <div class="form-material floating">
                         <input type="text" class="form-control" name="signup-username">
                         <label for="signup-password-confirm">Username</label>
+                        <p class="font-italic" style="color:red "> Masukkan nombor kad pengenalan</p>
+                        <p class="font-italic" style="color:red "> eg: 0102030405566 (tanpa '-')</p>
                       </div>
                     </div>
                   </div>
