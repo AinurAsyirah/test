@@ -130,15 +130,50 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control" name="signup-name">
-                        <label for="signup-username">Nama</label>
+                        <input type="text" class="form-control" id="signup-username" name="signup-username">
+                        <label for="signup-username">Nombor Kad Pengenalan</label>
+                        <p class="font-italic" style="color:red ">eg:0102030405566(tanpa '-')</p>
                       </div>
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="email" class="form-control"  name="signup-email">
+                        <input type="text" class="form-control" id="signup-nama" name="signup-nama">
+                        <label for="signup-nama">Nama</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="text" class="form-control" id="signup-notel" name="signup-notel">
+                        <label for="signup-notel">Nombor Telefon</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <label for="profile-settings-email">Tarikh Lahir</label>
+                      <input type="date" class="js-datepicker form-control form-control-lg" id="example-datepicker6" name="dob" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="dd-mm-yyyy" value="24-Jun-1973" >
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-9">
+                      <div class="form-material floating">
+                        <select class="form-control" id="material-jantina" name="signup-jantina">
+                          <option></option><!-- Empty value for demostrating material select box -->
+                          <option value="1">Lelaki</option>
+                          <option value="2">Perempuan</option>
+                        </select>
+                        <label for="material-jantina">Jantina</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="email" class="form-control" id="signup-email" name="signup-email">
                         <label for="signup-email">Email</label>
                       </div>
                     </div>
@@ -146,67 +181,8 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control"  name="signup-phone">
-                        <label for="signup-password-confirm">Nombor Telefon</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <input type="date" class="form-control" name="signup-dob">
-                        <label for="signup-password-confirm">Tarikh Lahir</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <div class="col-12">
-                          <div class="custom-control custom-radio custom-control-inline mb-5">
-                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio1" value="option1" checked>
-                            <label class="custom-control-label" for="example-inline-radio1">Lelaki</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline mb-5">
-                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio2" value="option2">
-                            <label class="custom-control-label" for="example-inline-radio2">Perempuan</label>
-                          </div>
-                        </div>
-                        <label for="signup-password-confirm">Jantina</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <input type="text" class="form-control"  name="signup-class">
-                        <label for="signup-password-confirm">Kelas</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <textarea class="form-control" id="example-textarea-input" name="signup-address" rows="6"></textarea>
-                        <label for="signup-password-confirm">Alamat Tempat Tinggal</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <input type="text" class="form-control" name="signup-form">
-                        <label for="signup-password-confirm">Tingkatan</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-12">
-                      <div class="form-material floating">
-                        <input type="text" class="form-control" name="signup-username">
-                        <label for="signup-password-confirm">Username</label>
-                        <p class="font-italic" style="color:red "> Masukkan nombor kad pengenalan</p>
-                        <p class="font-italic" style="color:red "> eg: 0102030405566 (tanpa '-')</p>
+                        <textarea class="form-control" id="material-textarea-alamat" name="signup-alamat" rows="3"></textarea>
+                        <label for="material-textarea-alamat">Alamat</label>
                       </div>
                     </div>
                   </div>
@@ -214,7 +190,7 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="password" class="form-control" id="signup-password" name="signup-password">
-                        <label for="signup-password">Password</label>
+                        <label for="signup-password">Kata Laluan</label>
                       </div>
                     </div>
                   </div>
@@ -222,10 +198,10 @@
                     <div class="col-12">
                       <div class="form-material floating">
                         <input type="password" class="form-control" id="signup-password-confirm" name="signup-password-confirm">
-                        <label for="signup-password-confirm">Password Confirmation</label>
+                        <label for="signup-password-confirm">Sahkan Kata Laluan</label>
                       </div>
                     </div>
-                  </div>         
+                  </div>       
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="custom-control custom-checkbox">
