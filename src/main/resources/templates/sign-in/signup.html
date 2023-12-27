@@ -130,7 +130,7 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control" id="signup-username" name="signup-username">
+                        <input type="text" class="form-control" id="signup-username" name="username">
                         <label for="signup-username">Nombor Kad Pengenalan</label>
                         <p class="font-italic" style="color:red ">eg:0102030405566(tanpa '-')</p>
                       </div>
@@ -139,7 +139,7 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control" id="signup-nama" name="signup-nama">
+                        <input type="text" class="form-control" id="signup-nama" name="nama">
                         <label for="signup-nama">Nama</label>
                       </div>
                     </div>
@@ -147,8 +147,16 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="text" class="form-control" id="signup-notel" name="signup-notel">
+                        <input type="text" class="form-control" id="signup-notel" name="notel">
                         <label for="signup-notel">Nombor Telefon</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                      <div class="form-material floating">
+                        <input type="email" class="form-control" id="signup-email" name="email">
+                        <label for="signup-email">Email</label>
                       </div>
                     </div>
                   </div>
@@ -161,7 +169,7 @@
                   <div class="form-group row">
                     <div class="col-md-9">
                       <div class="form-material floating">
-                        <select class="form-control" id="material-jantina" name="signup-jantina">
+                        <select class="form-control" id="material-jantina" name="jantina">
                           <option></option><!-- Empty value for demostrating material select box -->
                           <option value="1">Lelaki</option>
                           <option value="2">Perempuan</option>
@@ -170,18 +178,44 @@
                       </div>
                     </div>
                   </div>
+                
                   <div class="form-group row">
-                    <div class="col-12">
+                    <div class="col-md-9">
                       <div class="form-material floating">
-                        <input type="email" class="form-control" id="signup-email" name="signup-email">
-                        <label for="signup-email">Email</label>
+                        <select class="form-control" id="material-jantina" name="tingkatan">
+                          <option></option><!-- Empty value for demostrating material select box -->
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <label for="material-jantina">Tingkatan</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-9">
+                      <div class="form-material floating">
+                        <select class="form-control" id="material-jantina" name="kelas">
+                          <option></option><!-- Empty value for demostrating material select box -->
+                          <option value="1">Mukhriz</option>
+                          <option value="2">Durah</option>
+                          <option value="3">Melewar</option>
+                          <option value="4">Kurshiah</option>
+                          <option value="5">Antah</option>
+                          <option value="6">Najihah</option>
+                          <option value="7">Munawir</option>
+                          <option value="8">Bahiyah</option>
+                        </select>
+                        <label for="material-jantina">Kelas</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <textarea class="form-control" id="material-textarea-alamat" name="signup-alamat" rows="3"></textarea>
+                        <textarea class="form-control" id="material-textarea-alamat" name="alamat" rows="3"></textarea>
                         <label for="material-textarea-alamat">Alamat</label>
                       </div>
                     </div>
@@ -189,7 +223,7 @@
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
-                        <input type="password" class="form-control" id="signup-password" name="signup-password">
+                        <input type="password" class="form-control" id="signup-password" name="password">
                         <label for="signup-password">Kata Laluan</label>
                       </div>
                     </div>

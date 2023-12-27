@@ -2,35 +2,22 @@ package com.heroku.java.MODEL;
 
 public class student_register_model {
 
-    private int id;
     private String username;
+    private String nama;
     private String email;
-    private String password;
-    private String name;
-    private String phone;
+    private String notel;
     private String dob;
-    private String form;
-    private String address;
-    private String gender;
-    private String studclass;
+    private String jantina;
+   private String tingkatan;
+    private String kelas;
+    private String alamat;
+    private String password;
+    
 
    public student_register_model(){
     
    }
 
-    /**
-     * @return int return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * @return String return the username
@@ -44,6 +31,20 @@ public class student_register_model {
      */
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    /**
+     * @return String return the nama
+     */
+    public String getNama() {
+        return nama;
+    }
+
+    /**
+     * @param nama the nama to set
+     */
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     /**
@@ -61,45 +62,17 @@ public class student_register_model {
     }
 
     /**
-     * @return String return the password
+     * @return String return the notel
      */
-    public String getPassword() {
-        return password;
+    public String getNotel() {
+        return notel;
     }
 
     /**
-     * @param password the password to set
+     * @param notel the notel to set
      */
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    /**
-     * @return String return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * @return String return the phone
-     */
-    public String getPhone() {
-        return phone;
-    }
-
-    /**
-     * @param phone the phone to set
-     */
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setNotel(String notel) {
+        this.notel = notel;
     }
 
     /**
@@ -117,59 +90,73 @@ public class student_register_model {
     }
 
     /**
-     * @return String return the form
+     * @return String return the jantina
      */
-    public String getForm() {
-        return form;
+    public String getJantina() {
+        return jantina;
     }
 
     /**
-     * @param form the form to set
+     * @param jantina the jantina to set
      */
-    public void setForm(String form) {
-        this.form = form;
+    public void setJantina(String jantina) {
+        this.jantina = jantina;
     }
 
     /**
-     * @return String return the address
+     * @return String return the tingkatan
      */
-    public String getAddress() {
-        return address;
+    public String getTingkatan() {
+        return tingkatan;
     }
 
     /**
-     * @param address the address to set
+     * @param tingkatan the tingkatan to set
      */
-    public void setAddress(String address) {
-        this.address = address;
+    public void setTingkatan(String tingkatan) {
+        this.tingkatan = tingkatan;
     }
 
     /**
-     * @return String return the gender
+     * @return String return the kelas
      */
-    public String getGender() {
-        return gender;
+    public String getKelas() {
+        return kelas;
     }
 
     /**
-     * @param gender the gender to set
+     * @param kelas the kelas to set
      */
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setKelas(String kelas) {
+        this.kelas = kelas;
     }
 
     /**
-     * @return String return the class
+     * @return String return the alamat
      */
-    public String getStudClass() {
-        return studclass;
+    public String getAlamat() {
+        return alamat;
     }
 
     /**
-     * @param class the class to set
+     * @param alamat the alamat to set
      */
-    public void setClass(String studclass) {
-        this.studclass = studclass;
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    /**
+     * @return String return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 }

@@ -39,30 +39,30 @@ public class student_register {
 public String registerAcc(HttpSession session, @ModelAttribute("signup") student_register_model stud){
     try{
         Connection con=dataSource.getConnection();
-        final var s=con.prepareStatement("INSERT INTO student(studentIC,studentName,studentEmail,studentPhone,studentDOB,studentGender,studentClass,studentUsername,studentPassword,studentAddress,studentForm) values (?,?,?,?,?,?,?,?,?,?,?)");
+        final var s=con.prepareStatement("INSERT INTO student(studentIC,studentName,studentEmail,studentPhone,studentDOB,studentGender,studentClass,studentPassword,studentAddress,studentForm) VALUES (?,?,?,?,?,?,?,?,?,?)");
     
        
-        String name= stud.getName();
+        String studIC= stud.getUsername();
+        String name= stud.getNama();
         String email=stud.getEmail();
-        String phone=stud.getPhone();
+        String phone=stud.getNotel();
         String dob=stud.getDob();
-        String gender=stud.getGender();
-        String studclass=stud.getStudClass();
-         String username=stud.getUsername();
-        String pass=stud.getPassword();
-        String address=stud.getAddress();
-        String form =stud.getForm();
+        String gender=stud.getJantina();
+        String form=stud.getTingkatan();
+        String kelas=stud.getKelas();
+        String address=stud.getAlamat();
+        String password =stud.getPassword();
 
-        s.setString(1,name);
-        s.setString(2,email);
-        s.setString(3,phone);
-        s.setString(4,dob);
-        s.setString(5,gender);
-        s.setString(6,studclass);
-        s.setString(7,username);
-        s.setString(8,pass);
-        s.setString(9,address);
-        s.setString(10,form);
+        s.setString(1,studIC);
+        s.setString(2,name);
+        s.setString(3,email);
+        s.setString(4,phone);
+        s.setString(5,dob);
+        s.setString(6,gender);
+        s.setString(8,form);
+        s.setString(9,kelas);
+        s.setString(10,address);
+        s.setString(11,password);
         s.executeUpdate();
 
         con.close();
