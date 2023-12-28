@@ -39,7 +39,7 @@ public class student_register {
 public String registerAcc(HttpSession session, @ModelAttribute("signup") student_register_model stud){
     try{
         Connection con=dataSource.getConnection();
-        final var s=con.prepareStatement("INSERT INTO student(studentic,studentname,studentemail,studentphone,studentdob,studentgender,studentform,studentclass,,studentaddress,studentpassword) VALUES (?,?,?,?,?,?,?,?,?,?)");
+        final var s=con.prepareStatement("INSERT INTO student(studentic,studentname,studentemail,studentphone,studentdob,studentgender,studentform,studentclass,studentaddress,studentpassword) VALUES (?,?,?,?,?,?,?,?,?,?)");
     
        
         String studIC= stud.getUsername();
